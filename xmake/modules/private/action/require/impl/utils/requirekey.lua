@@ -46,9 +46,6 @@ function main(requireinfo, opt)
     if requireinfo.system then
         key = key .. "/system"
     end
-    if requireinfo.private then
-        key = key .. "/private"
-    end
     if key:startswith("/") then
         key = key:sub(2)
     end
